@@ -1,0 +1,609 @@
+/* SEAN SCSS STYLES */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* A-OK STYLES 
+
+Type ref:
+ArnhemPro-NormalItalic
+ArnhemPro-BoldItalic
+ArnhemPro-BlackItalic
+ArnhemPro-Black
+ArnhemPro-Bold
+ArnhemPro-Normal
+*/
+/* Utilities */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 18px/24px 'ArnhemPro-Normal', Georgia, Times, serif;
+  overflow-y: scroll;
+}
+a {
+  -webkit-transition: all, ease, 0.2s;
+  -moz-transition: all, ease, 0.2s;
+  -o-transition: all, ease, 0.2s;
+  transition: all, ease, 0.2s;
+  text-decoration: none;
+}
+a:hover {
+  color: #666 !important;
+}
+#wrap nav {
+  width: 100%;
+  background: #fffef8;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  z-index: 9999;
+}
+#wrap nav a#logo {
+  display: block;
+  margin: 0 auto;
+  width: 570px;
+  height: 80px;
+  background: #e6e6e6;
+  padding: 30px;
+  margin-bottom: 40px;
+  text-indent: -9999px;
+  background: url('../img/logo.png') 0 0 no-repeat;
+}
+#wrap nav ul li {
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 20px;
+  padding: 0 20px;
+}
+#wrap nav ul li a {
+  text-decoration: none;
+}
+#wrap nav ul li a:hover {
+  color: #666;
+}
+#wrap nav h1 {
+  font: 40px/40px 'ArnhemPro-Bold', Georgia, Times, serif;
+  margin: 60px 0 20px;
+}
+#wrap nav p.writing {
+  font: 24px/32px 'ArnhemPro-Regular', Georgia, Times, serif;
+  margin-bottom: 20px;
+}
+#wrap section {
+  width: 100%;
+  margin: 0 auto;
+}
+#wrap section #intro {
+  width: 35%;
+  margin: 40px auto;
+  position: relative;
+  z-index: 9999;
+}
+#wrap section #intro p {
+  font: 20px/28px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+  margin-bottom: 15px;
+}
+#wrap section #quote {
+  text-align: center;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  width: 260px;
+}
+#wrap section #quote p {
+  font: 24px/32px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+  color: #000;
+  opacity: .2;
+}
+#wrap section #quote span {
+  color: #bfbfbf;
+  text-transform: uppercase;
+  font: 13px/21px 'ArnhemPro-Normal', Georgia, Times, serif;
+  letter-spacing: 2px;
+}
+#wrap section img.left {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+#wrap section img.right {
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  margin-top: 150px;
+}
+#wrap section img.profile {
+  display: block;
+  margin: 50px auto 30px;
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+}
+#wrap section .item {
+  width: 100%;
+  float: left;
+  font: 22px/29px 'ArnhemPro-Normal', Georgia, Times, serif;
+  margin-bottom: 20px;
+}
+#wrap section .item p {
+  margin-bottom: 15px;
+}
+#wrap section .item .left {
+  width: 48%;
+  text-align: right;
+  float: left;
+  font: 22px/29px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+}
+#wrap section .item .right {
+  width: 48%;
+  text-align: left;
+  float: right;
+  padding-right: 10%;
+}
+#wrap section img.mark {
+  display: block;
+  margin: 0 auto;
+}
+#wrap section .container {
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#wrap section .container #one,
+#wrap section .container #two,
+#wrap section .container #three {
+  display: block;
+  position: relative;
+  float: left;
+  width: 33.3%;
+  padding: 20px 50px 120px;
+  text-align: center;
+  overflow: hidden;
+}
+#wrap section .container #one span.number,
+#wrap section .container #two span.number,
+#wrap section .container #three span.number {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 9px;
+}
+#wrap section .container #one h2,
+#wrap section .container #two h2,
+#wrap section .container #three h2 {
+  font: 28px/32px 'ArnhemPro-Bold', Georgia, Times, serif;
+  text-decoration: underline;
+  margin: 60px 0;
+}
+#wrap section .container #one img,
+#wrap section .container #two img,
+#wrap section .container #three img {
+  position: absolute;
+  margin: -40px 0 0 -128px;
+  z-index: 1111;
+}
+#wrap section .container #one h3,
+#wrap section .container #two h3,
+#wrap section .container #three h3 {
+  margin: 50px 0 10px;
+}
+#wrap section .container #one h3 span,
+#wrap section .container #two h3 span,
+#wrap section .container #three h3 span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+#wrap section .container #one p,
+#wrap section .container #two p,
+#wrap section .container #three p {
+  text-align: left;
+  margin: 20px 0;
+}
+#wrap section .container #one span.number,
+#wrap section .container #two span.number,
+#wrap section .container #three span.number,
+#wrap section .container #one h2,
+#wrap section .container #two h2,
+#wrap section .container #three h2,
+#wrap section .container #one h3,
+#wrap section .container #two h3,
+#wrap section .container #three h3,
+#wrap section .container #one p,
+#wrap section .container #two p,
+#wrap section .container #three p {
+  position: relative;
+  z-index: 8888;
+}
+#wrap section .container #one blockquote,
+#wrap section .container #two blockquote,
+#wrap section .container #three blockquote {
+  font: 24px/28px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+}
+#wrap section .container #one ul,
+#wrap section .container #two ul,
+#wrap section .container #three ul {
+  padding: 10px 0;
+}
+#wrap section .container #one li,
+#wrap section .container #two li,
+#wrap section .container #three li {
+  padding: 5px 0;
+}
+#wrap section .container .post {
+  display: block;
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 20px 50px 120px;
+  text-align: center;
+  overflow: hidden;
+  height: 775px;
+}
+#wrap section .container .post h2 {
+  font: 28px/32px 'ArnhemPro-Bold', Georgia, Times, serif;
+  text-decoration: underline;
+  margin: 30px 0;
+}
+#wrap section .container .post img {
+  max-width: 100%;
+}
+#wrap section .container .post h3 {
+  margin: 50px 0 10px;
+}
+#wrap section .container .post h3 span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+#wrap section .container .post p {
+  text-align: left;
+  margin: 20px 0;
+}
+#wrap section .container .post a.readmore {
+  display: block;
+  padding: 5px;
+  background: #fff;
+  width: 115px;
+}
+#wrap section .container .post a.readmore:hover {
+  padding: 10px;
+  width: 125px;
+  margin: -5px 0 0 -5px;
+}
+#wrap section .container.reviews {
+  background: #fffef8;
+  text-align: center;
+}
+#wrap section .container.reviews h3 {
+  font: 28px/28px 'ArnhemPro-Bold', Georgia, Times, serif;
+  padding: 50px 0 40px;
+}
+#wrap section .container.reviews .one,
+#wrap section .container.reviews .two,
+#wrap section .container.reviews .three {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+  float: left;
+  width: 33.3%;
+  padding: 0 50px;
+  text-align: center;
+}
+#wrap section .container.reviews .one p,
+#wrap section .container.reviews .two p,
+#wrap section .container.reviews .three p {
+  margin: 20px 0 40px;
+}
+#wrap section .container.reviews .one p span,
+#wrap section .container.reviews .two p span,
+#wrap section .container.reviews .three p span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#wrap section .container.reviews .one p i,
+#wrap section .container.reviews .two p i,
+#wrap section .container.reviews .three p i {
+  font-family: 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+}
+#wrap section .container.reviews #mark {
+  margin-top: -40px;
+}
+#wrap section #entry {
+  width: 800px;
+  margin: 0 auto;
+  padding: 5% 10% 15%;
+  text-align: center;
+}
+#wrap section #entry h1 {
+  font: 28px/28px 'ArnhemPro-Bold', Georgia, Times, serif;
+  margin-bottom: 15px;
+}
+#wrap section #entry time {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  display: block;
+  color: #999;
+  font-size: 14px;
+}
+#wrap section #entry p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+#wrap section #entry img {
+  max-width: 500px;
+  margin: 20px auto;
+}
+#wrap section #mark {
+  width: 100%;
+  position: relative;
+  float: left;
+  margin-top: -90px;
+  z-index: 9999;
+}
+body.blue,
+#one,
+.post:nth-child(1n+1) {
+  background: #e3f0f7;
+}
+body.blue a,
+#one a,
+.post:nth-child(1n+1) a,
+body.blue p,
+#one p,
+.post:nth-child(1n+1) p,
+body.blue span,
+#one span,
+.post:nth-child(1n+1) span,
+body.blue div,
+#one div,
+.post:nth-child(1n+1) div,
+body.blue h1,
+#one h1,
+.post:nth-child(1n+1) h1,
+body.blue h2,
+#one h2,
+.post:nth-child(1n+1) h2,
+body.blue h3,
+#one h3,
+.post:nth-child(1n+1) h3,
+body.blue blockquote,
+#one blockquote,
+.post:nth-child(1n+1) blockquote,
+body.blue ul,
+#one ul,
+.post:nth-child(1n+1) ul,
+body.blue li,
+#one li,
+.post:nth-child(1n+1) li {
+  color: #0089cf;
+}
+body.blue #wrap a#logo,
+#one #wrap a#logo,
+.post:nth-child(1n+1) #wrap a#logo {
+  background-position: 0 0;
+}
+body.yellow,
+#two,
+.post:nth-child(2n+2) {
+  background: #fffcc9;
+}
+body.yellow a,
+#two a,
+.post:nth-child(2n+2) a,
+body.yellow p,
+#two p,
+.post:nth-child(2n+2) p,
+body.yellow span,
+#two span,
+.post:nth-child(2n+2) span,
+body.yellow div,
+#two div,
+.post:nth-child(2n+2) div,
+body.yellow h1,
+#two h1,
+.post:nth-child(2n+2) h1,
+body.yellow h2,
+#two h2,
+.post:nth-child(2n+2) h2,
+body.yellow h3,
+#two h3,
+.post:nth-child(2n+2) h3,
+body.yellow blockquote,
+#two blockquote,
+.post:nth-child(2n+2) blockquote,
+body.yellow ul,
+#two ul,
+.post:nth-child(2n+2) ul,
+body.yellow li,
+#two li,
+.post:nth-child(2n+2) li {
+  color: #9b8c00;
+}
+body.yellow #wrap a#logo,
+#two #wrap a#logo,
+.post:nth-child(2n+2) #wrap a#logo {
+  background-position: 0 -80px;
+}
+body.green,
+#three,
+.post:nth-child(3n+3) {
+  background: #e5f3e9;
+}
+body.green a,
+#three a,
+.post:nth-child(3n+3) a,
+body.green p,
+#three p,
+.post:nth-child(3n+3) p,
+body.green span,
+#three span,
+.post:nth-child(3n+3) span,
+body.green div,
+#three div,
+.post:nth-child(3n+3) div,
+body.green h1,
+#three h1,
+.post:nth-child(3n+3) h1,
+body.green h2,
+#three h2,
+.post:nth-child(3n+3) h2,
+body.green h3,
+#three h3,
+.post:nth-child(3n+3) h3,
+body.green blockquote,
+#three blockquote,
+.post:nth-child(3n+3) blockquote,
+body.green ul,
+#three ul,
+.post:nth-child(3n+3) ul,
+body.green li,
+#three li,
+.post:nth-child(3n+3) li {
+  color: #0b7039;
+}
+body.green #wrap a#logo,
+#three #wrap a#logo,
+.post:nth-child(3n+3) #wrap a#logo {
+  background-position: 0 -160px;
+}
